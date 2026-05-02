@@ -6,7 +6,7 @@ import io
 st.title("RAG Knowledge Assistant")
 st.write("AI-powered document Q&A system")
 
-client = OpenAI(api_key="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"
+client = OpenAI(api_key="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")
 
  uploaded_file=st.file_uploader("Upload PDF",type="pdf")
 if uploaded_file:
