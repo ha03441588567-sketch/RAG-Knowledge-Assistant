@@ -1,15 +1,5 @@
-from fastapi import FastAPI, UploadFile, File
-from fastapi.middleware.cors import CORSMiddleware
+import streamlit as st
 
-app = FastAPI(title= "RAG Knowledge Assistant")
-
-app.add_middleware(CORSMiddleware, allow_origins=["*"])
-
-@app.get("/")
-def read_root():
-  return{"message": "RAG Knowledge Assistant API"}
-
-@app.post("/upload")
-async def upload_file(file:UploadFile = File(...)):
-  return {"filename":file.filename, "status": "uploaded"}
-  
+st.title("RAG Knowledge Assistant")
+st.write("AI-powered document Q&A system")
+st.file_uploader("Upload PDF", type="pdf")
