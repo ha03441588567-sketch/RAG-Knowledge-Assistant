@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(title= "RAG Knowledge Assistant")
 
-app.add_middleware(CORSMiddle, allow_origins=["*"])
+app.add_middleware(CORSMiddleware, allow_origins=["*"])
 
 @app.get("/")
 def read_root():
