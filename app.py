@@ -5,7 +5,6 @@ from langchain_text_splitters import CharacterTextSplitter
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain_community.vectorstores import FAISS
 from langchain.chains import RetrievalQA
-
 openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 st.title("RAG Knowledge Assistant")
