@@ -1,8 +1,8 @@
 streamlit
 openai
 PyPDF2
-langchain
+langchain==0.1.20
 langchain-openai
 langchain-community
-faiss-cpu
 langchain-text-splitters
+faiss-cpu
