@@ -2,6 +2,6 @@ streamlit
 openai
 PyPDF2
 langchain
-langchain_openai
+langchain-openai
 langchain-community
 faiss-cpu
